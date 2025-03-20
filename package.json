@@ -4,7 +4,9 @@
   "description": "Here is a quote refactor | PERN stack app | Click a button and a quote displays related to that button(emotion)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "cd ./server && npm run server",
+    "client": "cd ./client && npm run dev",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/whoisalpheus/here-is-a-quote2/issues"
   },
-  "homepage": "https://github.com/whoisalpheus/here-is-a-quote2#readme"
+  "homepage": "https://github.com/whoisalpheus/here-is-a-quote2#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
