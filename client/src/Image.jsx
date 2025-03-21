@@ -193,7 +193,7 @@ const [bgImage, setBgImage] = useState(null)
           </div>
         </div>
       ) : ( */}
-        // Quote display view
+        {/* Quote display view */}
         <div
             className="w-full relative h-96 rounded-lg overflow-hidden"
             show={showQuote}
@@ -228,12 +228,13 @@ const [bgImage, setBgImage] = useState(null)
           </div>
           
           {/* Back button */}
-          <Button
+          {/* <Button
             onClick={handleClose}
             className="absolute top-4 left-4 bg-white bg-opacity-75 hover:bg-opacity-100 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors"
           >
-            ← Back
-          </Button>
+            Back
+          </Button> */}
+
         </div>
       {/* )} */}
     </div>
