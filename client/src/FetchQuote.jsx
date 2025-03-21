@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import 'bootswatch/dist/THEME-HERE/bootstrap.min.css'
-// import './App.css'
+import './App.css'
 import { Alert } from "react-bootstrap" 
 import Buttons from './Buttons'
 import Image from './Image'

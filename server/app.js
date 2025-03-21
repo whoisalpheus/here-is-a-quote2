@@ -17,9 +17,9 @@ app.use('/', indexRouter)
 app.use('/quote', quoteRouter)
 
 // Development NODE_ENV
-if (process.env.NODE_ENV === 'development') {
-    app.use(morgan('dev'))
-}
+// if (process.env.NODE_ENV === 'development') {
+//     app.use(morgan('dev'))
+// }
 
 // Production NODE_ENV
 if (process.env.NODE_ENV === 'production') {
