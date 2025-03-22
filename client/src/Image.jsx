@@ -35,6 +35,10 @@ function Image({ showQuote, handleClose, currentQuote, author }) {
     }
   }, [showQuote])
 
+  // const containerClass = fullPage
+  //   ? 'quote-image-container fullpage'
+  //   : 'quote-image-container'
+
   return (
     <div className="flex flex-col items-center max-w-4xl mx-auto">
         {/* Quote display view */}
@@ -67,12 +71,12 @@ function Image({ showQuote, handleClose, currentQuote, author }) {
           </div>
           
           {/* Back button */}
-          {/* <Button
+          {/* {fullPage && (<Button
             onClick={handleClose}
             className="absolute top-4 left-4 bg-white bg-opacity-75 hover:bg-opacity-100 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors"
           >
             Back
-          </Button> */}
+          </Button>)} */}
 
         </div>
 
