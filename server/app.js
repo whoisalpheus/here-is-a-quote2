@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
+const morgan = require('morgan')
 require('dotenv').config()
 const cors = require('cors')
-const morgan = require('morgan')
 const indexRouter = require('./routes/indexRouter')
 const quoteRouter = require('./routes/quoteRouter')
 
@@ -17,9 +17,9 @@ app.use('/', indexRouter)
 app.use('/quote', quoteRouter)
 
 // Development NODE_ENV
-// if (process.env.NODE_ENV === 'development') {
-//     app.use(morgan('dev'))
-// }
+if (process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'))
+}
 
 // Production NODE_ENV
 if (process.env.NODE_ENV === 'production') {
@@ -31,5 +31,5 @@ app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'client', 'build
 const PORT = process.env.PORT
 
 app.listen(PORT, () => {
-    console.log(`Here is a quote app is litening on port ${PORT}`)
+    console.log(`Here is a quote app is listening on port ${PORT}`)
 })
