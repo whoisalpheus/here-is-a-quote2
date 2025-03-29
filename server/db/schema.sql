@@ -1,4 +1,4 @@
-CREATE DATABASE quotes;
+CREATE DATABASE quotes_dhxi;
 
 CREATE TABLE quotes_tbl(
     quote_id SERIAL PRIMARY KEY,
