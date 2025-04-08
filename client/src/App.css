@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(34, 33, 33);
+  background-color: rgb(65, 6, 6);
 }
 
 #root {
@@ -23,6 +23,6 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.945) 0%, rgba(255, 255, 255, 0.055) 50%, rgba(255, 255, 255, 0.925) 100%);
   background-size: 200px 100%;
   background-clip: text;
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color: white;
   animation: shimmer 2s infinite linear;
 }
