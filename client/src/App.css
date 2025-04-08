@@ -46,4 +46,5 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 4s infinite linear;
+  -webkit-text-stroke: 1px black;
 }
