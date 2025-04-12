@@ -8,7 +8,7 @@ import './App.css'
 function Buttons({ onClick }) { // onClose
 
     return (
-        <Container className="bg-secondary rounded-4">
+        <Container style={{ width: '80vw', height: '80vh' }} className="bg-secondary rounded-4">
             <h1>Pick a topic</h1>
             <Col>           
                 <Button id="sad" className="m-3 shadow text-danger" onClick={ onClick } type="submit">Sadness</Button>
