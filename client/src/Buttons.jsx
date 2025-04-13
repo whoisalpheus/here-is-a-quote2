@@ -8,22 +8,22 @@ import './App.css'
 function Buttons({ onClick }) { // onClose
 
     return (
-        <Container style={{ width: '80vw', height: '80vh' }} className="bg-secondary rounded-4">
+        <Container style={{ width: '80vw', height: '80vh' }} className="bg-transparent rounded-4">
             <h1>Pick a topic</h1>
             <Col>           
-                <Button id="sad" className="m-3 shadow text-danger" onClick={ onClick } type="submit">Sadness</Button>
-                <Button id="anger" className="m-3 shadow text-white" onClick={ onClick } type="submit">Anger</Button>
-                <Button id="anxiety" className="m-3 shadow text-warning" onClick={ onClick } type="submit">Anxiety</Button>
+                <Button size="lg" id="sad" className="m-5 shadow text-danger" onClick={ onClick } type="submit">Sadness</Button>
+                <Button size="lg" id="anger" className="m-5 shadow text-white" onClick={ onClick } type="submit">Anger</Button>
+                <Button size="lg" id="anxiety" className="m-5 shadow text-warning" onClick={ onClick } type="submit">Anxiety</Button>
             </Col>
             <Col>
-                <Button id="happiness" className="m-3 shadow text-info" onClick={ onClick } type="submit">Happiness</Button>
-                <Button id="shame" className="m-3 shadow text-success" onClick={ onClick } type="submit">Shame</Button>
-                <Button id="guilt" className="m-3 shadow text-info" onClick={ onClick } type="submit">Guilt</Button>
+                <Button size="lg" id="happiness" className="m-5 shadow text-info" onClick={ onClick } type="submit">Happiness</Button>
+                <Button size="lg" id="shame" className="m-5 shadow text-success" onClick={ onClick } type="submit">Shame</Button>
+                <Button size="lg" id="guilt" className="m-5 shadow text-info" onClick={ onClick } type="submit">Guilt</Button>
             </Col>
             <Col>
-                <Button id="self_worth" className="m-3 shadow text-danger" onClick={ onClick } type="submit">Self-Worth</Button>
-                <Button id="resilience" className="m-3 shadow text-white" onClick={ onClick } type="submit">Resilience</Button>
-                {/* <Button id="depression" className="m-3 shadow text-black" onClick={ onClick } type="submit">Depression</Button> */}
+                <Button size="lg" id="self_worth" className="m-5 shadow text-danger" onClick={ onClick } type="submit">Self-Worth</Button>
+                <Button size="lg" id="resilience" className="m-5 shadow text-white" onClick={ onClick } type="submit">Resilience</Button>
+                {/* <Button size="lg" id="depression" className="m-5 shadow text-black" onClick={ onClick } type="submit">Depression</Button> */}
             </Col>
         </Container>
 )}
